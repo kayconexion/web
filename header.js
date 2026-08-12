@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     <a href="index.html" class="flex items-center gap-3 shrink-0">
       <img src="https://kay-conexion.com/wp-content/uploads/2025/03/KAY-LOGO-FINAL-CVS_05-e1759693247935-300x171.jpg" alt="Kay Conexion" style="height:46px;">
     </a>
-    <nav class="hidden lg:flex items-center gap-6 text-white text-[13px] font-semibold shrink-0">
+    <nav class="hidden lg:flex items-center gap-6 text-white text-[15px] font-semibold shrink-0">
       <a href="index.html" class="hover:text-[#FFC53A] transition">Inicio</a>
       <a href="cursos.html" class="hover:text-[#FFC53A] transition">Cursos</a>
       <a href="mentores-ia.html" class="hover:text-[#FFC53A] transition">Mentores IA</a>
