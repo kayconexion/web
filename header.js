@@ -30,12 +30,13 @@ document.addEventListener('DOMContentLoaded',()=>{
       <div class="dropdown relative" data-dropdown="terapias">
         <button class="dropdown-toggle hover:text-[#FFC53A] flex items-center gap-1" data-target="terapias">Terapias <span class="arrow transition-transform">▾</span></button>
         <div id="dropdown-terapias" class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-[12px] shadow-[0_20px_40px_rgba(0,0,0,0.15)] p-2 min-w-[220px] hidden z-50">
-          <a href="#" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">🧠 BIO NEURO CIENCIA</a>
-          <a href="#" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">💬 COACHING</a>
-          <a href="#" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">🌀 HIPNOSIS ERICKSONIANA</a>
-          <a href="#" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">🔮 NEO CHAMANISMO</a>
-          <a href="#" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">✨ METAFÍSICA</a>
-          <a href="#" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">🎯 PNL</a>
+          <a href="bio-neuro-ciencia.html" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">🧠 BIO NEURO CIENCIA</a>
+          <a href="coaching.html" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">💬 COACHING</a>
+          <a href="hipnosis-ericksoniana.html" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">🌀 HIPNOSIS ERICKSONIANA</a>
+          <a href="neo-chamanismo.html" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">🔮 NEO CHAMANISMO</a>
+          <a href="metafisica.html" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">✨ METAFÍSICA</a>
+          <a href="pnl.html" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">🎯 PNL</a>
+          <a href="terapias.html" class="block px-3 py-2 rounded-[8px] hover:bg-black/5 text-[#101218] text-[13px]">VER + TERAPIAS</a>
         </div>
       </div>
     </nav>
