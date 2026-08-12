@@ -3,123 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yana Los 7 códigos del cambio - Kay Conexion</title>
-<meta name="description" content="Yana Los 7 códigos del cambio de Carlos Alemán - Novela">
+<title>Yana Los 7 códigos del cambio - Kay Conexion | Carlos Alemán</title>
+<meta name="description" content="Yana Los 7 códigos del cambio de Carlos Alemán - 334 páginas. Cuando la locura se vuelve puerta luminosa hacia lo sagrado.">
 <link rel="icon" href="https://kay-conexion.com/wp-content/uploads/2025/10/cropped-KAY-LOGO-FINAL-CVS_07-32x32.jpg">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&family=Rubik:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 body{font-family:'Schibsted Grotesk',sans-serif;background:#F6F7F8;color:#101218;padding-top:64px;}
 h1,h2,h3{font-family:'Rubik',sans-serif;}
-.kay-card{transition:all .3s cubic-bezier(.16,1,.3,1);}
-.kay-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(32,54,91,.15);}
+.kay-card{transition:all .4s cubic-bezier(.16,1,.3,1); will-change:transform;}
+.kay-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(0,0,0,.15);}
+.filter-btn{transition:all .2s ease;}
+.filter-btn.active{transform:scale(1.02);}
 </style>
 </head>
 <body class="antialiased">
-<!-- HEADER DINAMICO - NO TOCAR -->
 <div id="header-root"></div>
 <script src="header.js"></script>
 
-<!-- HERO -->
-<section class="relative bg-[#20365b] overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-br from-[#20365b] via-[#2a4a7a] to-[#20365b]"></div>
-<div class="absolute top-0 right-0 w-[700px] h-[700px] bg-[#FFC53A]/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/4"></div>
-<div class="relative max-w-[1240px] mx-auto px-6 py-12 lg:py-20">
-<div class="grid lg:grid-cols-[360px_1fr] gap-10 items-start">
-<!-- PORTADA REAL -->
-<div class="bg-white rounded-[20px] p-3 shadow-[0_20px_60px_rgba(0,0,0,0.3)] w-[300px] mx-auto lg:mx-0"><img src="https://kay-conexion.com/wp-content/uploads/2026/06/edition-174053-500x719-1.jpg" alt="Yana Los 7 códigos del cambio" class="w-full rounded-[12px] object-cover"></div>
+<!-- HERO NEGRO ELEGANTE - YANA -->
+<section class="relative bg-black overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-black via-[#0a0a0a] to-[#101218]"></div>
+<div class="absolute top-0 right-0 w-[700px] h-[700px] bg-[#FFC53A]/[0.06] rounded-full blur-[130px] -translate-y-1/2 translate-x-1/4"></div>
+<div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/[0.03] rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4"></div>
+<div class="absolute top-1/2 left-1/2 w-[900px] h-[400px] bg-[#420B8B]/[0.05] rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+<div class="relative max-w-[1240px] mx-auto px-6 py-14 lg:py-20">
+<div class="grid lg:grid-cols-[360px_1fr] gap-12 items-start">
+<!-- PORTADA PREMIUM YANA -->
+<div class="relative w-[300px] mx-auto lg:mx-0">
+  <div class="absolute inset-0 bg-[#FFC53A]/20 rounded-[20px] blur-[30px] rotate-3"></div>
+  <div class="relative bg-white rounded-[20px] p-3 shadow-[0_30px_80px_rgba(0,0,0,0.5)] rotate-[-1deg] hover:rotate-[0deg] transition-transform duration-500">
+    <img src="https://kay-conexion.com/wp-content/uploads/2026/06/edition-174053-500x719-1.jpg" alt="Yana Los 7 códigos del cambio" class="w-full rounded-[12px] object-cover aspect-[3/4.3]">
+    <div class="absolute -bottom-3 -right-3 bg-[#FFC53A] text-black text-[10px] font-extrabold px-3 py-1.5 rounded-full shadow-[0_8px_20px_rgba(255,197,58,0.4)]">334 PÁGINAS</div>
+    <div class="absolute -top-3 -left-3 bg-black text-white text-[10px] font-bold px-3 py-1.5 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.3)]">NUEVO 2026</div>
+  </div>
+  <div class="mt-6 flex items-center justify-center gap-2 text-white/30 text-[11px] font-bold tracking-widest"><span class="w-6 h-[1px] bg-white/20"></span>MIRAHADAS • 2026<span class="w-6 h-[1px] bg-white/20"></span></div>
+</div>
 <div>
-<p class="text-[#FFC53A] text-[11px] tracking-[4px] font-extrabold mb-4">NARRATIVA CONTEMPORÁNEA • CARLOS ALEMÁN</p>
-<h1 class="text-white text-[48px] lg:text-[64px] font-extrabold leading-[0.9] mb-3">YANA<br>LOS 7 CÓDIGOS<br>DEL CAMBIO</h1>
-<p class="text-white/60 text-[11px] font-bold tracking-widest">EAN 9791388050220 • ISBN 979-13-88050-22-0 • 334 PÁGINAS • MIRAHADAS</p>
-<p class="text-white/80 text-[17px] leading-[1.6] mt-4 max-w-[580px]">A veces, la locura no es más que sabiduría hablando otro idioma. En una unidad psiquiátrica perdida en el bosque, Yana, mujer rumana de 80 años diagnosticada con demencia, guarda los Siete Códigos del Cambio heredados de chamanes de México y Sudamérica.</p>
-<div class="flex gap-3 mt-7 flex-wrap"><a href="https://tienda.mirahadas.com/libro/yana_179213/" target="_blank" class="bg-[#FFC53A] text-[#20365b] px-8 py-3 rounded-full font-extrabold text-[13px] hover:bg-white transition">COMPRAR AHORA →</a><a href="#preview" class="bg-white/10 border border-white/15 text-white px-7 py-3 rounded-full font-bold text-[13px]">Leer adelanto</a></div>
+<div class="inline-flex items-center gap-2 bg-white/[0.06] border border-white/[0.08] rounded-full px-4 py-1.5 mb-6 backdrop-blur">
+  <span class="w-1.5 h-1.5 bg-[#FFC53A] rounded-full animate-pulse"></span>
+  <span class="text-white/60 text-[10px] tracking-[2.5px] font-bold">SABIDURÍA CHAMÁNICA • MÉXICO Y SUDAMÉRICA • PSIQUIATRÍA</span>
+</div>
+<p class="text-[#FFC53A] text-[11px] tracking-[4px] font-extrabold mb-3">NARRATIVA CONTEMPORÁNEA • CARLOS ALEMÁN</p>
+<h1 class="text-white text-[42px] lg:text-[58px] font-extrabold leading-[0.85] tracking-[-0.03em] mb-3">YANA<br>
+  <span class="text-white/90">LOS 7 CÓDIGOS</span><br>
+  <span class="text-[#FFC53A]">DEL CAMBIO</span></h1>
+<p class="text-white/30 text-[11px] font-bold tracking-[2px] mt-3">EAN 9791388050220 • ISBN 979-13-88050-22-0 • 334 PÁGINAS • MIRAHADAS • 27-04-2026</p>
+<p class="text-white/70 text-[17px] leading-[1.7] mt-6 max-w-[580px]">A veces, la locura no es más que <span class="text-white font-bold">sabiduría hablando otro idioma</span>. En una unidad psiquiátrica perdida en el bosque, Yana, mujer rumana de 80 años diagnosticada con demencia, guarda los Siete Códigos del Cambio heredados de chamanes de México y Sudamérica.</p>
+<div class="flex gap-3 mt-8 flex-wrap">
+  <a href="https://tienda.mirahadas.com/libro/yana_179213/" target="_blank" class="bg-[#FFC53A] text-black px-8 py-3.5 rounded-full font-extrabold text-[13px] hover:bg-white transition-all shadow-[0_8px_24px_rgba(255,197,58,0.3)] hover:shadow-[0_12px_32px_rgba(255,197,58,0.4)] hover:-translate-y-0.5 flex items-center gap-2">COMPRAR AHORA <span>→</span></a>
+  <a href="#preview" class="bg-white/10 border border-white/15 backdrop-blur text-white px-7 py-3.5 rounded-full font-bold text-[13px] hover:bg-white hover:text-black transition">Leer adelanto • Issuu</a>
+</div>
+<div class="flex items-center gap-4 mt-8">
+  <div class="flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-3 py-1"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span><span class="text-white/60 text-[11px] font-bold">Disponible en Mirahadas</span></div>
+  <span class="text-white/30 text-[11px]">Depósito: SE 3372-2025</span>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- FILTROS STICKY - FIX sin transparencia -->
-<section class="sticky top-[64px] z-40 bg-white border-b border-black/[0.06] shadow-[0_2px_20px_rgba(0,0,0,0.06)]">
+
+<!-- FILTROS STICKY NEGRO ELEGANTE -->
+<section class="sticky top-[64px] z-40 bg-white border-b border-black/[0.06] shadow-[0_2px_24px_rgba(0,0,0,0.06)] backdrop-blur-xl">
 <div class="max-w-[1240px] mx-auto px-6 py-3.5 flex items-center gap-3 overflow-x-auto">
-<button class="filter-btn active bg-[#20365b] text-white px-5 py-2 rounded-full text-[13px] font-bold whitespace-nowrap" data-filter="sinopsis">Sinopsis</button>
-<button class="filter-btn bg-white border border-black/10 text-[#20365b] px-5 py-2 rounded-full text-[13px] font-semibold hover:border-[#20365b] whitespace-nowrap" data-filter="preview">Adelanto Issuu</button>
-<button class="filter-btn bg-white border border-black/10 text-[#20365b] px-5 py-2 rounded-full text-[13px] font-semibold hover:border-[#20365b] whitespace-nowrap" data-filter="detalles">Ficha técnica</button>
-<button class="filter-btn bg-white border border-black/10 text-[#20365b] px-5 py-2 rounded-full text-[13px] font-semibold hover:border-[#20365b] whitespace-nowrap" data-filter="autor">Autor</button>
-<span class="ml-auto text-[11px] text-black/40 font-bold tracking-widest hidden md:block">LIBRO • DISPONIBLE</span>
+<button class="filter-btn active bg-black text-white px-6 py-2.5 rounded-full text-[13px] font-bold whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.15)]" data-filter="sinopsis">Sinopsis</button>
+<button class="filter-btn bg-white border border-black/10 text-black/70 px-5 py-2.5 rounded-full text-[13px] font-semibold hover:border-black hover:text-black whitespace-nowrap" data-filter="preview">Adelanto Issuu</button>
+<button class="filter-btn bg-white border border-black/10 text-black/70 px-5 py-2.5 rounded-full text-[13px] font-semibold hover:border-black hover:text-black whitespace-nowrap" data-filter="detalles">Ficha técnica</button>
+<button class="filter-btn bg-white border border-black/10 text-black/70 px-5 py-2.5 rounded-full text-[13px] font-semibold hover:border-black hover:text-black whitespace-nowrap" data-filter="autor">Autor</button>
+<span class="ml-auto text-[11px] text-black/30 font-bold tracking-widest hidden md:flex items-center gap-2"><span class="w-2 h-2 bg-[#FFC53A] rounded-full animate-pulse"></span>LIBRO • NUEVO 2026</span>
 </div>
 </section>
-<!-- TODOS LOS CURSOS -->
-<section class="max-w-[1240px] mx-auto px-6 py-12">
-<!-- CURSO 1 - SINOPSIS -->
-<div data-section="sinopsis" class="bg-white rounded-[24px] p-8 lg:p-10 border border-black/5">
-<p class="text-[#FFC53A] text-[11px] tracking-[3px] font-bold mb-2">HISTORIA REAL EXTRAÍDA WP</p>
-<h2 class="text-[28px] font-extrabold leading-[1.1]">Cuando la locura se vuelve puerta luminosa</h2>
-<p class="mt-5 text-[15px] leading-[1.7] text-[#494B51]">En una unidad psiquiátrica perdida en el bosque, Yana, una mujer rumana de ochenta años diagnosticada con demencia, parece oscilar entre el delirio y la lucidez. Sin embargo, bajo su silencio habita un saber antiguo: los Siete Códigos del Cambio, enseñanzas que heredó tras décadas de convivencia con chamanes en México y Sudamérica.</p>
-<p class="mt-4 text-[15px] leading-[1.7] text-[#494B51]">Agael, educador especializado y profundamente racional, es asignado a su cuidado. Al principio, observa a Yana como una paciente más, pero cada encuentro lo confronta con lo invisible: sueños, memorias, símbolos y emociones que desarman sus certezas y despiertan preguntas esenciales.</p>
-<p class="mt-4 text-[15px] leading-[1.7] text-[#494B51]">Mientras Yana despierta en él una verdad olvidada, el hospital entero comienza a transformarse. Pacientes y cuidadores son tocados por una fuerza que trasciende diagnósticos y fronteras. <em>YANA</em> es una historia sobre el despertar del alma, donde la locura deja de ser enfermedad para revelarse como puerta luminosa hacia lo sagrado.</p>
+
+<!-- CONTENIDO PREMIUM -->
+<section class="max-w-[1240px] mx-auto px-6 py-14">
+<!-- SINOPSIS YANA -->
+<div data-section="sinopsis" class="bg-white rounded-[28px] p-8 lg:p-12 border border-black/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-[300px] h-[300px] bg-[#420B8B]/[0.03] rounded-full blur-[60px]"></div>
+<div class="relative">
+<div class="flex items-center gap-3 mb-6">
+  <span class="bg-black text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-widest">HISTORIA INICIÁTICA</span>
+  <span class="bg-[#FFC53A] text-black text-[10px] font-bold px-3 py-1 rounded-full tracking-widest">PSIQUIATRÍA • CHAMANISMO</span>
 </div>
-<!-- PREVIEW -->
-<div data-section="preview" id="preview" class="mt-10 bg-white rounded-[24px] overflow-hidden border border-black/5">
-<div class="p-6 flex items-center justify-between"><div><h3 class="font-bold text-[20px]">Adelanto Issuu - Imagen real WP</h3><p class="text-black/50 text-[12px] mt-1">Extraído de WordPress original</p></div><span class="bg-[#101218] text-white text-[10px] px-3 py-1 rounded-full">ISSUU REAL</span></div>
-<iframe src="https://e.issuu.com/embed.html?backgroundColor=%231d1d23&d=yana&u=babidi-bu" style="width:100%;height:600px;border:none;" allowfullscreen></iframe>
-</div>
-<!-- FICHA -->
-<div data-section="detalles" class="mt-10 grid md:grid-cols-[1.2fr_0.8fr] gap-6">
-<div class="bg-white rounded-[20px] p-7 border border-black/5">
-<h3 class="font-extrabold text-[18px]">Ficha técnica - Datos reales WP</h3>
-<div class="mt-5 grid grid-cols-2 gap-3 text-[12px]">
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">MATERIA</p><a href="https://tienda.mirahadas.com/materia/narrativa-contemporanea/" target="_blank" class="font-bold text-[#20365b] underline">Narrativa contemporánea</a></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">IDIOMA</p><p class="font-bold">Castellano</p></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">EAN</p><p class="font-bold">9791388050220</p></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">PÁGINAS</p><p class="font-bold">334</p></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">FORMATO</p><p class="font-bold">16 x 23 cm</p><div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">ISBN</p><p class="font-bold">979-13-88050-22-0</p></div><div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">DEPÓSITO</p><p class="font-bold">SE 3372-2025</p></div></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">EDICIÓN</p><p class="font-bold">27-04-2026</p></div>
-</div>
-<a href="https://tienda.mirahadas.com/libro/yana_179213/" target="_blank" class="kay-card mt-6 inline-block bg-[#20365b] text-white px-6 py-2.5 rounded-full text-[12px] font-bold">Comprar en Mirahadas →</a>
-</div>
-<div class="bg-[#101218] rounded-[20px] p-7 text-white">
-<h3 class="font-bold text-[18px]">Los 7 Códigos del Cambio</h3>
-<p class="text-white/50 text-[12px] mt-1 mb-5">Saberes de Yana</p>
-<div class="space-y-2.5">
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">1. Sueños</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">2. Memorias</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">3. Símbolos</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">4. Emociones</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">5. Silencio</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">6. Despertar</div>
-<div class="bg-[#FFC53A] text-[#20365b] rounded-full px-4 py-2.5 font-bold text-[13px]">7. Lo Sagrado</div>
+<h2 class="text-[30px] lg:text-[34px] font-extrabold leading-[1.1] tracking-[-0.02em]">Cuando la locura se vuelve<br>puerta luminosa</h2>
+<div class="mt-8 space-y-5">
+<p class="text-[16px] leading-[1.8] text-black/70">En una unidad psiquiátrica perdida en el bosque, <strong class="text-black">Yana, una mujer rumana de ochenta años diagnosticada con demencia</strong>, parece oscilar entre el delirio y la lucidez. Sin embargo, bajo su silencio habita un saber antiguo: los 
+  <strong class="text-black">Siete Códigos del Cambio</strong>, enseñanzas que heredó tras décadas de convivencia con chamanes en México y Sudamérica.</p>
+<p class="text-[16px] leading-[1.8] text-black/70">Agael, educador especializado y profundamente racional, es asignado a su cuidado. Al principio, observa a Yana como una paciente más, pero cada encuentro lo confronta con lo invisible: sueños, memorias, símbolos y emociones que desarman sus certezas y despiertan preguntas esenciales.</p>
+<p class="text-[16px] leading-[1.8] text-black/80 bg-[#F3F0FF] border border-[#420B8B]/10 rounded-[16px] p-5">Mientras Yana despierta en él una verdad olvidada, el hospital entero comienza a transformarse. Pacientes y cuidadores son tocados por una fuerza que trasciende diagnósticos y fronteras. <em class="font-bold text-black">YANA es una historia sobre el despertar del alma, donde la locura deja de ser enfermedad para revelarse como puerta luminosa hacia lo sagrado.</em></p>
 </div>
 </div>
 </div>
-<!-- AUTOR -->
-<div data-section="autor" class="mt-10 bg-white rounded-[24px] p-7 border border-black/5 flex gap-5">
-<a href="https://tienda.mirahadas.com/autor/carlos-aleman/" target="_blank"><img src="https://tienda.mirahadas.com/media/mirahadas/images/thumbs/author-135971-72x72.jpg" alt="Carlos Alemán" class="w-16 h-16 rounded-full object-cover"></a>
-<div class="flex-1"><p class="text-[#FFC53A] text-[11px] tracking-[3px] font-bold">AUTOR REAL</p><h4 class="font-bold text-[18px] mt-1">Carlos Alemán</h4><p class="text-[13px] text-black/60 mt-2 max-w-[600px] leading-[1.6]">Origen peruano, terapeuta, escritor, educador, practicante del chamanismo. Diplomado en Suiza, maestría en PNL, Hipnosis Ericksoniana y Coach certificado. Comenzó estudios en Ingeniería electrónica en Lima.</p><a href="https://tienda.mirahadas.com/autor/carlos-aleman/" target="_blank" class="inline-block mt-4 bg-[#101218] text-white px-5 py-2 rounded-full text-[11px] font-bold">Ver más sobre el autor →</a></div>
+
+<!-- PREVIEW ISSUU PREMIUM -->
+<div data-section="preview" id="preview" class="mt-10 bg-white rounded-[28px] overflow-hidden border border-black/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
+<div class="p-7 flex items-center justify-between border-b border-black/5">
+  <div class="flex items-center gap-4">
+    <div class="w-10 h-10 bg-black rounded-full grid place-items-center text-white">📖</div>
+    <div><h3 class="font-bold text-[19px] tracking-[-0.01em]">Adelanto Issuu - Yana</h3><p class="text-black/40 text-[12px] mt-0.5">Extraído de WordPress original • 334 páginas</p></div>
+  </div>
+  <div class="hidden md:flex items-center gap-2"><span class="bg-black text-white text-[10px] px-3 py-1.5 rounded-full font-bold tracking-widest">ISSUU REAL</span><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span></div>
+</div>
+<div class="bg-[#0a0a0a] p-2">
+  <iframe src="https://e.issuu.com/embed.html?backgroundColor=%231d1d23&d=yana&u=babidi-bu" style="width:100%;height:650px;border:none;border-radius:16px;" allowfullscreen></iframe>
+</div>
+</div>
+
+<!-- FICHA TÉCNICA + 7 CÓDIGOS -->
+<div data-section="detalles" class="mt-10 grid lg:grid-cols-[1.2fr_0.8fr] gap-6">
+<div class="bg-white rounded-[24px] p-8 border border-black/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
+<div class="flex items-center justify-between mb-6">
+  <h3 class="font-extrabold text-[20px] tracking-[-0.01em]">Ficha técnica</h3>
+  <span class="bg-[#F6F7F8] text-black/50 text-[10px] font-bold px-3 py-1 rounded-full tracking-widest">DATOS REALES WP</span>
+</div>
+<div class="grid grid-cols-2 gap-3 text-[12px]">
+<div class="bg-[#F6F7F8] rounded-[14px] p-4 border border-black/[0.03]"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">MATERIA</p><a href="https://tienda.mirahadas.com/materia/narrativa-contemporanea/" target="_blank" class="font-bold text-black underline decoration-[#FFC53A] underline-offset-4">Narrativa contemporánea</a></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">IDIOMA</p><p class="font-bold text-[14px]">Castellano</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">EAN</p><p class="font-bold font-mono text-[13px]">9791388050220</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">ISBN</p><p class="font-bold font-mono text-[13px]">979-13-88050-22-0</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">PÁGINAS</p><p class="font-bold text-[14px]">334 • Tapa blanda</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">FORMATO</p><p class="font-bold">16 x 23 cm</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">DEPÓSITO LEGAL</p><p class="font-bold">SE 3372-2025</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">EDICIÓN</p><p class="font-bold">27-04-2026 • Mirahadas</p></div>
+</div>
+<a href="https://tienda.mirahadas.com/libro/yana_179213/" target="_blank" class="mt-6 inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full text-[13px] font-bold hover:bg-[#FFC53A] hover:text-black transition-all hover:-translate-y-0.5 shadow-[0_4px_12px_rgba(0,0,0,0.15)]">Comprar en Mirahadas <span>→</span></a>
+</div>
+<div class="bg-black rounded-[24px] p-8 text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-[200px] h-[200px] bg-[#FFC53A]/[0.06] rounded-full blur-[40px]"></div>
+<div class="absolute bottom-0 left-0 w-[150px] h-[150px] bg-[#420B8B]/[0.08] rounded-full blur-[30px]"></div>
+<div class="relative">
+<h3 class="font-bold text-[20px] tracking-[-0.01em]">Los 7 Códigos del Cambio</h3>
+<p class="text-white/40 text-[12px] mt-1 mb-6">Saberes de Yana • Herencia chamánica</p>
+<div class="space-y-3">
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] hover:border-white/15 transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">1</span><span class="text-[13px] font-medium">Sueños</span><span class="ml-auto text-white/20 text-[10px]">→ Mensajes del alma</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">2</span><span class="text-[13px] font-medium">Memorias</span><span class="ml-auto text-white/20 text-[10px]">→ Raíces olvidadas</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">3</span><span class="text-[13px] font-medium">Símbolos</span><span class="ml-auto text-white/20 text-[10px]">→ Lenguaje invisible</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">4</span><span class="text-[13px] font-medium">Emociones</span><span class="ml-auto text-white/20 text-[10px]">→ Brújula interior</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">5</span><span class="text-[13px] font-medium">Silencio</span><span class="ml-auto text-white/20 text-[10px]">→ Voz del ser</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">6</span><span class="text-[13px] font-medium">Despertar</span><span class="ml-auto text-white/20 text-[10px]">→ Consciencia viva</span></div>
+<div class="flex items-center gap-3 bg-[#FFC53A] text-black rounded-full px-4 py-3 font-bold text-[13px] shadow-[0_8px_24px_rgba(255,197,58,0.3)] hover:shadow-[0_12px_32px_rgba(255,197,58,0.4)] hover:-translate-y-0.5 transition-all"><span class="w-6 h-6 bg-black text-[#FFC53A] rounded-full grid place-items-center text-[11px] font-bold">7</span><span>Lo Sagrado</span><span class="ml-auto text-black/60 text-[10px]">→ Puerta luminosa ✨</span></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- AUTOR PREMIUM -->
+<div data-section="autor" class="mt-10 bg-white rounded-[24px] p-8 border border-black/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.04)] flex gap-6 items-start">
+<a href="https://tienda.mirahadas.com/autor/carlos-aleman/" target="_blank" class="shrink-0 group"><div class="relative"><div class="absolute inset-0 bg-[#FFC53A]/20 rounded-full blur-[12px] group-hover:blur-[16px] transition"></div><img src="https://tienda.mirahadas.com/media/mirahadas/images/thumbs/author-135971-72x72.jpg" alt="Carlos Alemán" class="relative w-16 h-16 rounded-full object-cover border-2 border-white shadow-[0_4px_12px_rgba(0,0,0,0.1)]"></div></a>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-2"><span class="bg-black text-white text-[10px] font-bold px-2.5 py-1 rounded-full tracking-widest">AUTOR REAL</span><span class="text-black/30 text-[10px] font-bold tracking-widest">PERÚ • SUIZA • CHAMANISMO</span></div>
+<h4 class="font-bold text-[20px] tracking-[-0.01em]">Carlos Alemán</h4>
+<p class="text-[14px] text-black/60 mt-3 leading-[1.7] max-w-[640px]">Origen peruano, terapeuta, escritor, educador, practicante del chamanismo. Diplomado en Suiza, maestría en PNL, Hipnosis Ericksoniana y Coach certificado. Décadas con chamanes en México y Sudamérica inspiran Yana.</p>
+<div class="flex gap-2 mt-5">
+  <a href="https://tienda.mirahadas.com/autor/carlos-aleman/" target="_blank" class="inline-flex items-center gap-1.5 bg-black text-white px-5 py-2.5 rounded-full text-[12px] font-bold hover:bg-[#FFC53A] hover:text-black transition">Ver más sobre el autor <span>→</span></a>
+  <span class="inline-flex items-center gap-1.5 bg-[#F6F7F8] border border-black/5 text-black/60 px-4 py-2.5 rounded-full text-[11px] font-bold">+20 años • Chamanismo auténtico</span>
+</div>
+</div>
 </div>
 </section>
-<!-- CTA -->
-<section class="bg-[#FFC53A] py-11">
-<div class="max-w-[1240px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-5">
-<div><h3 class="text-[#20365b] text-[22px] font-extrabold leading-[1.1]">¿Listo para despertar tu alma?</h3><p class="text-[#20365b]/70 text-[13px] mt-1">334 páginas donde la locura se revela como puerta hacia lo sagrado.</p></div>
-<a href="https://tienda.mirahadas.com/libro/yana_179213/" target="_blank" class="bg-[#20365b] text-white px-7 py-3 rounded-full font-bold text-[13px] hover:bg-black transition">Comprar en Mirahadas →</a>
+
+<!-- CTA PREMIUM -->
+<section class="bg-[#FFC53A] py-14 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-black/10 rounded-full blur-[70px] translate-x-1/3 -translate-y-1/2"></div>
+<div class="max-w-[1240px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 relative">
+<div>
+  <h3 class="text-black text-[26px] font-extrabold leading-[1.1] tracking-[-0.02em]">¿Listo para despertar tu alma?</h3>
+  <p class="text-black/60 text-[13px] mt-2 font-medium">334 páginas donde la locura se revela como puerta hacia lo sagrado • Nuevo 2026</p>
+</div>
+<div class="flex gap-3">
+  <a href="https://tienda.mirahadas.com/libro/yana_179213/" target="_blank" class="bg-black text-white px-8 py-3.5 rounded-full font-bold text-[14px] hover:bg-white hover:text-black transition-all shadow-[0_8px_24px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">Comprar en Mirahadas →</a>
+  <a href="#preview" class="bg-white text-black px-6 py-3.5 rounded-full font-bold text-[14px] hover:bg-black hover:text-white transition-all hidden md:flex">Leer adelanto</a>
+</div>
 </div>
 </section>
-<!-- FOOTER COMPLETO -->
+
+<!-- FOOTER -->
 <div id="footer-root"></div>
 <script src="footer.js"></script>
 
-<!-- SCRIPTS -->
-
+<!-- SCRIPTS FILTROS PREMIUM -->
 <script>
-// FILTROS - facil de editar, sin HTML dentro
 document.querySelectorAll('.filter-btn').forEach(btn=>{
   btn.addEventListener('click',()=>{
     document.querySelectorAll('.filter-btn').forEach(b=>{
-      b.classList.remove('bg-[#20365b]','text-white');
-      b.classList.add('bg-white','border','border-black/10','text-[#20365b]');
+      b.classList.remove('bg-black','text-white','active','shadow-[0_4px_12px_rgba(0,0,0,0.15)]');
+      b.classList.add('bg-white','border','border-black/10','text-black/70');
     });
-    btn.classList.add('bg-[#20365b]','text-white');
-    btn.classList.remove('bg-white','border','border-black/10','text-[#20365b]');
+    btn.classList.add('bg-black','text-white','active','shadow-[0_4px_12px_rgba(0,0,0,0.15)]');
+    btn.classList.remove('bg-white','border','border-black/10','text-black/70');
     const f=btn.dataset.filter;
     const t=document.querySelector(`[data-section="${f}"]`);
     if(t) t.scrollIntoView({behavior:'smooth', block:'start'});

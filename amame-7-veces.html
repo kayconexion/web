@@ -3,121 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ámame 7 Veces - Kay Conexion</title>
-<meta name="description" content="Ámame 7 Veces de Carlos Alemán - Novela">
+<title>Ámame 7 Veces - Kay Conexion | Carlos Alemán</title>
+<meta name="description" content="Ámame 7 Veces de Carlos Alemán - Novela transformadora. 268 páginas sobre los 7 hijos de la vida.">
 <link rel="icon" href="https://kay-conexion.com/wp-content/uploads/2025/10/cropped-KAY-LOGO-FINAL-CVS_07-32x32.jpg">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&family=Rubik:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 body{font-family:'Schibsted Grotesk',sans-serif;background:#F6F7F8;color:#101218;padding-top:64px;}
 h1,h2,h3{font-family:'Rubik',sans-serif;}
-.kay-card{transition:all .3s cubic-bezier(.16,1,.3,1);}
-.kay-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(32,54,91,.15);}
+.kay-card{transition:all .4s cubic-bezier(.16,1,.3,1); will-change:transform;}
+.kay-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(0,0,0,.15);}
+.filter-btn{transition:all .2s ease;}
+.filter-btn.active{transform:scale(1.02);}
+.img-zoom{transition:transform .7s cubic-bezier(.16,1,.3,1);}
+.group:hover .img-zoom{transform:scale(1.05);}
 </style>
 </head>
 <body class="antialiased">
-<!-- HEADER DINAMICO - NO TOCAR -->
 <div id="header-root"></div>
-<!-- HERO -->
-<section class="relative bg-[#20365b] overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-br from-[#20365b] via-[#2a4a7a] to-[#20365b]"></div>
-<div class="absolute top-0 right-0 w-[700px] h-[700px] bg-[#FFC53A]/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/4"></div>
-<div class="relative max-w-[1240px] mx-auto px-6 py-12 lg:py-20">
-<div class="grid lg:grid-cols-[360px_1fr] gap-10 items-start">
-<!-- PORTADA REAL -->
-<div class="bg-white rounded-[20px] p-3 shadow-[0_20px_60px_rgba(0,0,0,0.3)] w-[300px] mx-auto lg:mx-0"><img src="https://tienda.mirahadas.com/media/mirahadas/images/thumbs/edition-150799-454x666.jpg" alt="Ámame 7 Veces" class="w-full rounded-[12px] object-cover"></div>
+<script src="header.js"></script>
+
+<!-- HERO NEGRO ELEGANTE - LIBRO PREMIUM -->
+<section class="relative bg-black overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-black via-[#0a0a0a] to-[#101218]"></div>
+<div class="absolute top-0 right-0 w-[700px] h-[700px] bg-[#FFC53A]/[0.06] rounded-full blur-[130px] -translate-y-1/2 translate-x-1/4"></div>
+<div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/[0.03] rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4"></div>
+<div class="absolute top-1/2 left-1/2 w-[900px] h-[400px] bg-[#420B8B]/[0.04] rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+<div class="relative max-w-[1240px] mx-auto px-6 py-14 lg:py-20">
+<div class="grid lg:grid-cols-[360px_1fr] gap-12 items-start">
+<!-- PORTADA PREMIUM -->
+<div class="relative w-[300px] mx-auto lg:mx-0">
+  <div class="absolute inset-0 bg-[#FFC53A]/20 rounded-[20px] blur-[30px] rotate-3"></div>
+  <div class="relative bg-white rounded-[20px] p-3 shadow-[0_30px_80px_rgba(0,0,0,0.5)] rotate-[-1deg] hover:rotate-[0deg] transition-transform duration-500">
+    <img src="https://tienda.mirahadas.com/media/mirahadas/images/thumbs/edition-150799-454x666.jpg" alt="Ámame 7 Veces" class="w-full rounded-[12px] object-cover aspect-[3/4]">
+    <div class="absolute -bottom-3 -right-3 bg-[#FFC53A] text-black text-[10px] font-extrabold px-3 py-1.5 rounded-full shadow-[0_8px_20px_rgba(255,197,58,0.4)]">268 PÁGINAS</div>
+  </div>
+  <div class="mt-6 flex items-center justify-center gap-2 text-white/30 text-[11px] font-bold tracking-widest"><span class="w-6 h-[1px] bg-white/20"></span>MIRAHADAS • 2024<span class="w-6 h-[1px] bg-white/20"></span></div>
+</div>
 <div>
-<p class="text-[#FFC53A] text-[11px] tracking-[4px] font-extrabold mb-4">NARRATIVA CONTEMPORÁNEA • CARLOS ALEMÁN</p>
-<h1 class="text-white text-[48px] lg:text-[64px] font-extrabold leading-[0.9] mb-3">ÁMAME<br>7 VECES</h1>
-<p class="text-white/60 text-[11px] font-bold tracking-widest">EAN 9788410222618 • 268 PÁGINAS • MIRAHADAS</p>
-<p class="text-white/80 text-[17px] leading-[1.6] mt-4 max-w-[580px]">Es 2012. Cam lo pierde todo — divorcio, muerte de un hijo, enfermedad mortal — hasta que la Vida se le presenta como una esbelta dama y le revela a sus 7 hijos: Miedo, Muerte, Soledad, Tiempo, Perdón, Cambio y Amor.</p>
-<div class="flex gap-3 mt-7 flex-wrap"><a href="https://tienda.mirahadas.com/libro/amame-7-veces_156254/" target="_blank" class="bg-[#FFC53A] text-[#20365b] px-8 py-3 rounded-full font-extrabold text-[13px] hover:bg-white transition">COMPRAR AHORA →</a><a href="#preview" class="bg-white/10 border border-white/15 text-white px-7 py-3 rounded-full font-bold text-[13px]">Leer adelanto</a></div>
+<div class="inline-flex items-center gap-2 bg-white/[0.06] border border-white/[0.08] rounded-full px-4 py-1.5 mb-6 backdrop-blur">
+  <span class="w-1.5 h-1.5 bg-[#FFC53A] rounded-full animate-pulse"></span>
+  <span class="text-white/60 text-[10px] tracking-[2.5px] font-bold">NARRATIVA CONTEMPORÁNEA • BESTSELLER ESPIRITUAL</span>
+</div>
+<p class="text-[#FFC53A] text-[11px] tracking-[4px] font-extrabold mb-3">CARLOS ALEMÁN • ORIGEN PERUANO</p>
+<h1 class="text-white text-[52px] lg:text-[72px] font-extrabold leading-[0.85] tracking-[-0.03em] mb-3">ÁMAME<br>
+  <span class="text-[#FFC53A]">7 VECES</span></h1>
+<p class="text-white/30 text-[11px] font-bold tracking-[2px] mt-2">EAN 9788410222618 • 16x23.5 cm • 268 PÁGINAS • MIRAHADAS EDITORIAL</p>
+<p class="text-white/70 text-[17px] leading-[1.7] mt-6 max-w-[580px]">Es 2012. Cam lo pierde todo — divorcio, muerte de un hijo, enfermedad mortal — hasta que la Vida se le presenta como una esbelta dama y le revela a sus <span class="text-white font-bold">7 hijos: Miedo, Muerte, Soledad, Tiempo, Perdón, Cambio y Amor.</span></p>
+<div class="flex gap-3 mt-8 flex-wrap">
+  <a href="https://tienda.mirahadas.com/libro/amame-7-veces_156254/" target="_blank" class="bg-[#FFC53A] text-black px-8 py-3.5 rounded-full font-extrabold text-[13px] hover:bg-white transition-all shadow-[0_8px_24px_rgba(255,197,58,0.3)] hover:shadow-[0_12px_32px_rgba(255,197,58,0.4)] hover:-translate-y-0.5 flex items-center gap-2">COMPRAR AHORA <span>→</span></a>
+  <a href="#preview" class="bg-white/10 border border-white/15 backdrop-blur text-white px-7 py-3.5 rounded-full font-bold text-[13px] hover:bg-white hover:text-black transition">Leer adelanto • Issuu</a>
+</div>
+<div class="flex items-center gap-4 mt-8">
+  <div class="flex -space-x-2"><div class="w-7 h-7 rounded-full bg-[#FFC53A] border-2 border-black grid place-items-center text-[10px] font-bold text-black">★</div><div class="w-7 h-7 rounded-full bg-white border-2 border-black grid place-items-center text-[10px]">❤</div></div>
+  
+  <span class="text-white/40 text-[12px]">Historia real • Transformación garantizada</span>
+  
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- FILTROS STICKY - FIX sin transparencia -->
-<section class="sticky top-[64px] z-40 bg-white border-b border-black/[0.06] shadow-[0_2px_20px_rgba(0,0,0,0.06)]">
+
+<!-- FILTROS STICKY - NEGRO ELEGANTE -->
+<section class="sticky top-[64px] z-40 bg-white border-b border-black/[0.06] shadow-[0_2px_24px_rgba(0,0,0,0.06)] backdrop-blur-xl">
 <div class="max-w-[1240px] mx-auto px-6 py-3.5 flex items-center gap-3 overflow-x-auto">
-<button class="filter-btn active bg-[#20365b] text-white px-5 py-2 rounded-full text-[13px] font-bold whitespace-nowrap" data-filter="sinopsis">Sinopsis</button>
-<button class="filter-btn bg-white border border-black/10 text-[#20365b] px-5 py-2 rounded-full text-[13px] font-semibold hover:border-[#20365b] whitespace-nowrap" data-filter="preview">Adelanto Issuu</button>
-<button class="filter-btn bg-white border border-black/10 text-[#20365b] px-5 py-2 rounded-full text-[13px] font-semibold hover:border-[#20365b] whitespace-nowrap" data-filter="detalles">Ficha técnica</button>
-<button class="filter-btn bg-white border border-black/10 text-[#20365b] px-5 py-2 rounded-full text-[13px] font-semibold hover:border-[#20365b] whitespace-nowrap" data-filter="autor">Autor</button>
-<span class="ml-auto text-[11px] text-black/40 font-bold tracking-widest hidden md:block">LIBRO • DISPONIBLE</span>
+<button class="filter-btn active bg-black text-white px-6 py-2.5 rounded-full text-[13px] font-bold whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.15)]" data-filter="sinopsis">Sinopsis</button>
+<button class="filter-btn bg-white border border-black/10 text-black/70 px-5 py-2.5 rounded-full text-[13px] font-semibold hover:border-black hover:text-black whitespace-nowrap" data-filter="preview">Adelanto Issuu</button>
+<button class="filter-btn bg-white border border-black/10 text-black/70 px-5 py-2.5 rounded-full text-[13px] font-semibold hover:border-black hover:text-black whitespace-nowrap" data-filter="detalles">Ficha técnica</button>
+<button class="filter-btn bg-white border border-black/10 text-black/70 px-5 py-2.5 rounded-full text-[13px] font-semibold hover:border-black hover:text-black whitespace-nowrap" data-filter="autor">Autor</button>
+<span class="ml-auto text-[11px] text-black/30 font-bold tracking-widest hidden md:flex items-center gap-2">
+  <span class="w-2 h-2 bg-[#00a305] rounded-full animate-pulse"></span>LIBRO • DISPONIBLE</span>
 </div>
 </section>
-<!-- TODOS LOS CURSOS -->
-<section class="max-w-[1240px] mx-auto px-6 py-12">
-<!-- CURSO 1 - SINOPSIS -->
-<div data-section="sinopsis" class="bg-white rounded-[24px] p-8 lg:p-10 border border-black/5">
-<p class="text-[#FFC53A] text-[11px] tracking-[3px] font-bold mb-2">HISTORIA REAL EXTRAÍDA WP</p>
-<h2 class="text-[28px] font-extrabold leading-[1.1]">Un combate entre el amor y el dolor</h2>
-<p class="mt-5 text-[15px] leading-[1.7] text-[#494B51]">Es el año 2012. Cam es un hombre feliz en su trabajo y en su hogar, casado y con dos hijos, Uriel y Jeliel. Las situaciones de la vida se imponen: divorcio, la muerte de uno de sus hijos y una enfermedad mortal lo llevan a una fuerte depresión, abandono, tendencias suicidas y un odio personal contra la vida. Ataques e insultos a la vida hacen que ella se presente a él como una esbelta dama, quien le hace ver su realidad confrontándolo a él mismo.</p>
-<p class="mt-4 text-[15px] leading-[1.7] text-[#494B51]">Cam se reencuentra después de 33 años con el amor de su juventud, Nael, casada, con tres hijos y una vida agitada y dolorosa, para revivir esa relación de amor intenso nunca olvidada, días de pasión, recuerdos, promesas, un combate entre el amor y el dolor donde Cam estará obligado a confrontar su pasado y Nael su presente.</p>
-<p class="mt-4 text-[15px] leading-[1.7] text-[#494B51]">Cam conoce más tarde a los <strong class="text-[#20365b]">7 hijos de la vida: el Miedo, la Muerte, la Soledad, el Tiempo, el Perdón, el Cambio y el Amor</strong>, entidades quienes le hacen entender la vida a través de enseñanzas indescifrables, donde Cam tomará valor para confrontarse él mismo.</p>
+
+<!-- CONTENIDO PREMIUM -->
+<section class="max-w-[1240px] mx-auto px-6 py-14">
+<!-- SINOPSIS -->
+<div data-section="sinopsis" class="bg-white rounded-[28px] p-8 lg:p-12 border border-black/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-[300px] h-[300px] bg-[#FFC53A]/[0.04] rounded-full blur-[60px]"></div>
+<div class="relative">
+<div class="flex items-center gap-3 mb-6">
+  <span class="bg-black text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-widest">HISTORIA REAL</span>
+    <span class="bg-[#FFC53A] text-black text-[10px] font-bold px-3 py-1 rounded-full tracking-widest">PSIQUIATRÍA</span>
+
 </div>
-<!-- PREVIEW -->
-<div data-section="preview" id="preview" class="mt-10 bg-white rounded-[24px] overflow-hidden border border-black/5">
-<div class="p-6 flex items-center justify-between"><div><h3 class="font-bold text-[20px]">Adelanto Issuu - Imagen real WP</h3><p class="text-black/50 text-[12px] mt-1">Extraído de WordPress original</p></div><span class="bg-[#101218] text-white text-[10px] px-3 py-1 rounded-full">ISSUU REAL</span></div>
-<iframe src="https://e.issuu.com/embed.html?backgroundColor=%231d1d23&d=amame_7_veces_issu&u=babidi-bu" style="width:100%;height:600px;border:none;" allowfullscreen></iframe>
-</div>
-<!-- FICHA -->
-<div data-section="detalles" class="mt-10 grid md:grid-cols-[1.2fr_0.8fr] gap-6">
-<div class="bg-white rounded-[20px] p-7 border border-black/5">
-<h3 class="font-extrabold text-[18px]">Ficha técnica - Datos reales WP</h3>
-<div class="mt-5 grid grid-cols-2 gap-3 text-[12px]">
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">MATERIA</p><a href="https://tienda.mirahadas.com/materia/narrativa-contemporanea/" target="_blank" class="font-bold text-[#20365b] underline">Narrativa contemporánea</a></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">IDIOMA</p><p class="font-bold">Castellano</p></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">EAN</p><p class="font-bold">9788410222618</p></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">PÁGINAS</p><p class="font-bold">268</p></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">FORMATO</p><p class="font-bold">16 x 23.5 cm</p></div>
-<div class="bg-[#F6F7F8] rounded-[12px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest">EDICIÓN</p><p class="font-bold">10-06-2024</p></div>
-</div>
-<a href="https://tienda.mirahadas.com/libro/amame-7-veces_156254/" target="_blank" class="kay-card mt-6 inline-block bg-[#20365b] text-white px-6 py-2.5 rounded-full text-[12px] font-bold">Comprar en Mirahadas →</a>
-</div>
-<div class="bg-[#101218] rounded-[20px] p-7 text-white">
-<h3 class="font-bold text-[18px]">Los 7 hijos de la vida</h3>
-<p class="text-white/50 text-[12px] mt-1 mb-5">Entidades que transforman a Cam</p>
-<div class="space-y-2.5">
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">1. Miedo</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">2. Muerte</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">3. Soledad</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">4. Tiempo</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">5. Perdón</div>
-<div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[13px]">6. Cambio</div>
-<div class="bg-[#FFC53A] text-[#20365b] rounded-full px-4 py-2.5 font-bold text-[13px]">7. Amor</div>
+<h2 class="text-[30px] lg:text-[36px] font-extrabold leading-[1.1] tracking-[-0.02em]">Un combate entre el amor y el dolor</h2>
+<div class="mt-8 space-y-5">
+<p class="text-[16px] leading-[1.8] text-black/70">Es el año 2012. Cam es un hombre feliz en su trabajo y en su hogar, casado y con dos hijos, Uriel y Jeliel. Las situaciones de la vida se imponen: divorcio, la muerte de uno de sus hijos y una enfermedad mortal lo llevan a una fuerte depresión, abandono, tendencias suicidas y un odio personal contra la vida. Ataques e insultos a la vida hacen que ella se presente a él como una esbelta dama, quien le hace ver su realidad confrontándolo a él mismo.</p>
+<p class="text-[16px] leading-[1.8] text-black/70">Cam se reencuentra después de 33 años con el amor de su juventud, Nael, casada, con tres hijos y una vida agitada y dolorosa, para revivir esa relación de amor intenso nunca olvidada, días de pasión, recuerdos, promesas, un combate entre el amor y el dolor donde Cam estará obligado a confrontar su pasado y Nael su presente.</p>
+<p class="text-[16px] leading-[1.8] text-black/80 bg-[#FFF8E1] border border-[#FFC53A]/20 rounded-[16px] p-5">Cam conoce más tarde a los <strong class="text-black">7 hijos de la vida: el Miedo, la Muerte, la Soledad, el Tiempo, el Perdón, el Cambio y el Amor</strong>, entidades quienes le hacen entender la vida a través de enseñanzas indescifrables, donde Cam tomará valor para confrontarse él mismo.</p>
 </div>
 </div>
 </div>
-<!-- AUTOR -->
-<div data-section="autor" class="mt-10 bg-white rounded-[24px] p-7 border border-black/5 flex gap-5">
-<a href="https://tienda.mirahadas.com/autor/carlos-aleman/" target="_blank"><img src="https://tienda.mirahadas.com/media/mirahadas/images/thumbs/author-135971-72x72.jpg" alt="Carlos Alemán" class="w-16 h-16 rounded-full object-cover"></a>
-<div class="flex-1"><p class="text-[#FFC53A] text-[11px] tracking-[3px] font-bold">AUTOR REAL</p><h4 class="font-bold text-[18px] mt-1">Carlos Alemán</h4><p class="text-[13px] text-black/60 mt-2 max-w-[600px] leading-[1.6]">Origen peruano, terapeuta, escritor, educador, practicante del chamanismo. Diplomado en Suiza, maestría en PNL, Hipnosis Ericksoniana y Coach certificado. Comenzó estudios en Ingeniería electrónica en Lima.</p><a href="https://tienda.mirahadas.com/autor/carlos-aleman/" target="_blank" class="inline-block mt-4 bg-[#101218] text-white px-5 py-2 rounded-full text-[11px] font-bold">Ver más sobre el autor →</a></div>
+
+<!-- PREVIEW ISSUU PREMIUM -->
+<div data-section="preview" id="preview" class="mt-10 bg-white rounded-[28px] overflow-hidden border border-black/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
+<div class="p-7 flex items-center justify-between border-b border-black/5">
+  <div class="flex items-center gap-4">
+    <div class="w-10 h-10 bg-black rounded-full grid place-items-center text-white">📖</div>
+    <div><h3 class="font-bold text-[19px] tracking-[-0.01em]">Adelanto Issuu - Edición real</h3><p class="text-black/40 text-[12px] mt-0.5">Extraído de WordPress original • 268 páginas</p></div>
+  </div>
+  <div class="hidden md:flex items-center gap-2"><span class="bg-black text-white text-[10px] px-3 py-1.5 rounded-full font-bold tracking-widest">ISSUU REAL</span><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span></div>
+</div>
+<div class="bg-[#0a0a0a] p-2">
+  <iframe src="https://e.issuu.com/embed.html?backgroundColor=%231d1d23&d=amame_7_veces_issu&u=babidi-bu" style="width:100%;height:650px;border:none;border-radius:16px;" allowfullscreen></iframe>
+</div>
+</div>
+
+<!-- FICHA TÉCNICA + 7 HIJOS -->
+<div data-section="detalles" class="mt-10 grid lg:grid-cols-[1.2fr_0.8fr] gap-6">
+<div class="bg-white rounded-[24px] p-8 border border-black/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
+<div class="flex items-center justify-between mb-6">
+  <h3 class="font-extrabold text-[20px] tracking-[-0.01em]">Ficha técnica</h3>
+  <span class="bg-[#F6F7F8] text-black/50 text-[10px] font-bold px-3 py-1 rounded-full tracking-widest">DATOS REALES WP</span>
+</div>
+<div class="grid grid-cols-2 gap-3 text-[12px]">
+<div class="bg-[#F6F7F8] rounded-[14px] p-4 border border-black/[0.03] hover:border-black/10 transition"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">MATERIA</p><a href="https://tienda.mirahadas.com/materia/narrativa-contemporanea/" target="_blank" class="font-bold text-black underline decoration-[#FFC53A] underline-offset-4">Narrativa contemporánea</a></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4 border border-black/[0.03]"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">IDIOMA</p><p class="font-bold text-[14px]">Castellano</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">EAN</p><p class="font-bold font-mono text-[13px]">9788410222618</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">PÁGINAS</p><p class="font-bold text-[14px]">268 • Tapa blanda</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">FORMATO</p><p class="font-bold">16 x 23.5 cm</p></div>
+<div class="bg-[#F6F7F8] rounded-[14px] p-4"><p class="text-black/40 text-[10px] font-bold tracking-widest mb-1">EDICIÓN</p><p class="font-bold">10-06-2024 • Mirahadas</p></div>
+</div>
+<a href="https://tienda.mirahadas.com/libro/amame-7-veces_156254/" target="_blank" class="mt-6 inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full text-[13px] font-bold hover:bg-[#FFC53A] hover:text-black transition-all hover:-translate-y-0.5 shadow-[0_4px_12px_rgba(0,0,0,0.15)]">Comprar en Mirahadas <span>→</span></a>
+</div>
+<div class="bg-black rounded-[24px] p-8 text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-[200px] h-[200px] bg-[#FFC53A]/[0.06] rounded-full blur-[40px]"></div>
+<div class="relative">
+<h3 class="font-bold text-[20px] tracking-[-0.01em]">Los 7 hijos de la vida</h3>
+<p class="text-white/40 text-[12px] mt-1 mb-6">Entidades que transforman a Cam • Orden de aparición</p>
+<div class="space-y-3">
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] hover:border-white/15 transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">1</span><span class="text-[13px] font-medium">Miedo</span><span class="ml-auto text-white/90 text-[10px] group-hover:text-white/40">→ El guardián</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">2</span><span class="text-[13px] font-medium">Muerte</span><span class="ml-auto text-white/90 text-[10px]">→ La maestra</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">3</span><span class="text-[13px] font-medium">Soledad</span><span class="ml-auto text-white/90 text-[10px]">→ La consejera</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">4</span><span class="text-[13px] font-medium">Tiempo</span><span class="ml-auto text-white/90 text-[10px]">→ El juez</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">5</span><span class="text-[13px] font-medium">Perdón</span><span class="ml-auto text-white/90 text-[10px]">→ El sanador</span></div>
+<div class="group flex items-center gap-3 bg-white/[0.06] border border-white/10 rounded-full px-4 py-3 hover:bg-white/[0.08] transition"><span class="w-6 h-6 bg-white/10 rounded-full grid place-items-center text-[11px] font-bold">6</span><span class="text-[13px] font-medium">Cambio</span><span class="ml-auto text-white/90 text-[10px]">→ El alquimista</span></div>
+<div class="flex items-center gap-3 bg-[#FFC53A] text-black rounded-full px-4 py-3 font-bold text-[13px] shadow-[0_8px_24px_rgba(255,197,58,0.3)] hover:shadow-[0_12px_32px_rgba(255,197,58,0.4)] hover:-translate-y-0.5 transition-all"><span class="w-6 h-6 bg-black text-[#FFC53A] rounded-full grid place-items-center text-[11px] font-bold">7</span><span>Amor</span><span class="ml-auto text-black/60 text-[10px]">→ La verdad final ❤</span></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- AUTOR PREMIUM -->
+<div data-section="autor" class="mt-10 bg-white rounded-[24px] p-8 border border-black/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.04)] flex gap-6 items-start">
+<a href="https://tienda.mirahadas.com/autor/carlos-aleman/" target="_blank" class="shrink-0 group"><div class="relative"><div class="absolute inset-0 bg-[#FFC53A]/20 rounded-full blur-[12px] group-hover:blur-[16px] transition"></div><img src="https://tienda.mirahadas.com/media/mirahadas/images/thumbs/author-135971-72x72.jpg" alt="Carlos Alemán" class="relative w-16 h-16 rounded-full object-cover border-2 border-white shadow-[0_4px_12px_rgba(0,0,0,0.1)]"></div></a>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-2"><span class="bg-black text-white text-[10px] font-bold px-2.5 py-1 rounded-full tracking-widest">AUTOR REAL</span><span class="text-black/30 text-[10px] font-bold tracking-widest">PERÚ • SUIZA</span></div>
+<h4 class="font-bold text-[20px] tracking-[-0.01em]">Carlos Alemán</h4>
+<p class="text-[14px] text-black/60 mt-3 leading-[1.7] max-w-[640px]">Origen peruano, terapeuta, escritor, educador, practicante del chamanismo. Diplomado en Suiza, maestría en PNL, Hipnosis Ericksoniana y Coach certificado. Comenzó estudios en Ingeniería electrónica en Lima. Más de 20 años transformando vidas.</p>
+<div class="flex gap-2 mt-5">
+  <a href="https://tienda.mirahadas.com/autor/carlos-aleman/" target="_blank" class="inline-flex items-center gap-1.5 bg-black text-white px-5 py-2.5 rounded-full text-[12px] font-bold hover:bg-[#FFC53A] hover:text-black transition">Ver más sobre el autor <span>→</span></a>
+  <span class="inline-flex items-center gap-1.5 bg-[#F6F7F8] border border-black/5 text-black/60 px-4 py-2.5 rounded-full text-[11px] font-bold">+20 años experiencia</span>
+</div>
+</div>
 </div>
 </section>
-<!-- CTA -->
-<section class="bg-[#FFC53A] py-11">
-<div class="max-w-[1240px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-5">
-<div><h3 class="text-[#20365b] text-[22px] font-extrabold leading-[1.1]">¿Listo para conocer a los 7 hijos?</h3><p class="text-[#20365b]/70 text-[13px] mt-1">268 páginas de transformación, amor y renacimiento.</p></div>
-<a href="https://tienda.mirahadas.com/libro/amame-7-veces_156254/" target="_blank" class="bg-[#20365b] text-white px-7 py-3 rounded-full font-bold text-[13px] hover:bg-black transition">Comprar en Mirahadas →</a>
+
+<!-- CTA PREMIUM -->
+<section class="bg-[#FFC53A] py-14 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-black/10 rounded-full blur-[70px] translate-x-1/3 -translate-y-1/2"></div>
+<div class="max-w-[1240px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 relative">
+<div>
+  <h3 class="text-black text-[26px] font-extrabold leading-[1.1] tracking-[-0.02em]">¿Listo para conocer a los 7 hijos?</h3>
+  <p class="text-black/60 text-[13px] mt-2 font-medium">268 páginas de transformación, amor y renacimiento • Disponible en Mirahadas</p>
+</div>
+<div class="flex gap-3">
+  <a href="https://tienda.mirahadas.com/libro/amame-7-veces_156254/" target="_blank" class="bg-black text-white px-8 py-3.5 rounded-full font-bold text-[14px] hover:bg-white hover:text-black transition-all shadow-[0_8px_24px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">Comprar en Mirahadas →</a>
+  <a href="#preview" class="bg-white text-black px-6 py-3.5 rounded-full font-bold text-[14px] hover:bg-black hover:text-white transition-all hidden md:flex">Leer adelanto</a>
+</div>
 </div>
 </section>
-<!-- FOOTER COMPLETO -->
+
+<!-- FOOTER -->
 <div id="footer-root"></div>
 <script src="footer.js"></script>
 
-<!-- SCRIPTS -->
-<script src="header.js"></script>
+<!-- SCRIPTS FILTROS PREMIUM -->
 <script>
-// FILTROS - facil de editar, sin HTML dentro
 document.querySelectorAll('.filter-btn').forEach(btn=>{
   btn.addEventListener('click',()=>{
     document.querySelectorAll('.filter-btn').forEach(b=>{
-      b.classList.remove('bg-[#20365b]','text-white');
-      b.classList.add('bg-white','border','border-black/10','text-[#20365b]');
+      b.classList.remove('bg-black','text-white','active','shadow-[0_4px_12px_rgba(0,0,0,0.15)]');
+      b.classList.add('bg-white','border','border-black/10','text-black/70');
     });
-    btn.classList.add('bg-[#20365b]','text-white');
-    btn.classList.remove('bg-white','border','border-black/10','text-[#20365b]');
+    btn.classList.add('bg-black','text-white','active','shadow-[0_4px_12px_rgba(0,0,0,0.15)]');
+    btn.classList.remove('bg-white','border','border-black/10','text-black/70');
     const f=btn.dataset.filter;
     const t=document.querySelector(`[data-section="${f}"]`);
     if(t) t.scrollIntoView({behavior:'smooth', block:'start'});
